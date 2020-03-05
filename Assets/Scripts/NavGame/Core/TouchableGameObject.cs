@@ -5,11 +5,11 @@ using UnityEngine;
 namespace NavGame.Core
 {
 
-    public class TouchableGameObjetc : MonoBehaviour
+    public class TouchableGameObject : MonoBehaviour
 
     {
         public float contactRadius = 0.5f;
-        public bool IsInTouch(TouchableGameObjetc other)
+        public bool IsInTouch(TouchableGameObject other)
         {
             float distance = Vector3.Distance(transform.position, other.transform.position);
             return distance < contactRadius + other.contactRadius;
