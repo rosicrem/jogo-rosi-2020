@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1597291235946500986}
   - component: {fileID: 1597291235946500967}
   - component: {fileID: 1597291235946500964}
-  - component: {fileID: 1597291235946500965}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -79,19 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1597291235946500965
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597291235946500987}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1597291236074240125
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +89,6 @@ GameObject:
   - component: {fileID: 1597291236074240120}
   - component: {fileID: 1597291236074240121}
   - component: {fileID: 1597291236074240126}
-  - component: {fileID: 1597291236074240127}
   - component: {fileID: 1597291236074240124}
   m_Layer: 0
   m_Name: Creep
@@ -120,8 +105,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597291236074240125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.6, y: 0, z: 34.96}
-  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_LocalPosition: {x: 35.6, y: 0, z: 35.07}
+  m_LocalScale: {x: 0.6, y: 1, z: 0.6}
   m_Children:
   - {fileID: 1597291235946500986}
   m_Father: {fileID: 0}
@@ -165,21 +150,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1597291236074240127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597291236074240125}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67a29c34384b258488a7501b482afd8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkablelayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!114 &1597291236074240124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +162,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9152d7398c0a1954eaaa1a1ade298d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contactRadius: 0.8
+  currentHealth: 0
+  stats:
+    maxHealth: 100
+    damage: 10
+    armor: 1
+    attackSpeed: 1
 --- !u!1 &1597291237540335263
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +180,6 @@ GameObject:
   - component: {fileID: 1597291237540335262}
   - component: {fileID: 1597291237540335259}
   - component: {fileID: 1597291237540335256}
-  - component: {fileID: 1597291237540335257}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -270,16 +246,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &1597291237540335257
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597291237540335263}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
