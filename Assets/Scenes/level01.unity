@@ -112,6 +112,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 29cc03e6897676542925128b2e5c8e6c, type: 2}
+--- !u!1 &14172086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14172088}
+  - component: {fileID: 14172087}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &14172087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14172086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c5df42280a2b64d89b68552b9dbb63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - name: bloop
+    audio: {fileID: 8300000, guid: 1c8833e451e1dfb4d96ddc0b77faf481, type: 3}
+  - name: coin-pickup
+    audio: {fileID: 8300000, guid: 848392b87f0297d4fb5349089c8be3a3, type: 3}
+  - name: enemy-hit
+    audio: {fileID: 8300000, guid: 465672ae919694144a5cef0fa44ad2a8, type: 3}
+  - name: error
+    audio: {fileID: 8300000, guid: 9cfc5389e2ff7e844b4b3910becf5ef2, type: 3}
+  - name: fail
+    audio: {fileID: 8300000, guid: d20040e6cb6da6a4bbde5d0447ba9786, type: 3}
+  - name: level-complete
+    audio: {fileID: 8300000, guid: bb85f60e4fb971f44adc4a437530e178, type: 3}
+--- !u!4 &14172088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14172086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.726807, y: 0.8515625, z: 11.2561035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +449,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54f1ba379ddbc6b44860e7b0c8a4ef0b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.07
   m_Pitch: 1
   Loop: 1
   Mute: 0
