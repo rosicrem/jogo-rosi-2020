@@ -1462,9 +1462,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1766463274861309945}
   - component: {fileID: 1766463274861309944}
+  - component: {fileID: 1766463274861309950}
   - component: {fileID: 1766463274861309951}
   - component: {fileID: 736464595878797446}
   - component: {fileID: 4001033046100656779}
+  - component: {fileID: 1766463274861309949}
   m_Layer: 0
   m_Name: Infantry
   m_TagString: Untagged
@@ -1472,6 +1474,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1766463274861309949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766463274861309948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d685be0bad1ad674486ef98989c9c2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contactRadius: 0.5
+  ofenseStats:
+    damage: 10
+    attackSpeed: 1
+  enemyLayers:
+  - Creep
+  enemiesToAttack: []
+--- !u!135 &1766463274861309950
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766463274861309948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &1766463274861309951
 NavMeshAgent:
   m_ObjectHideFlags: 0
