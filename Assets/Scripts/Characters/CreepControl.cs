@@ -6,7 +6,7 @@ using NavGame.Core;
 using NavGame.Managers;
 
 
-public class CreepControl : AttackGameObject
+public class CreepControl : InstantAttackerGameObject
 {
     DamageableGameObject finalTarget;
 
