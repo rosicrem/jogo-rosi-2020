@@ -10,10 +10,18 @@ public class PlayerControl : TouchableGameObject
     NavMeshAgent agent;
     Camera cam;
     public LayerMask walkablelayer;
+    public GameObject prefab;
+
     void Awake()
     {
         agent = GetComponent <NavMeshAgent>();
         cam = Camera.main;
+
+        GameObject obj = GameObject.FindWithTag("Finish");
+        DamageableGameObject dgo = obj.GetComponent<DamageableGameObject>();
+        GameObject projectile = Instantiate(prefab, transform.position, Quaternion.identity) as GameObject;
+        ProjectileController controller = projectile.GetComponent<ProjectileController>();
+        controller.Init(dgo);
     }
 
     // Update is called once per frame
