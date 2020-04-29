@@ -10,6 +10,7 @@ public class PlayerControl : TouchableGameObject
     NavMeshAgent agent;
     Camera cam;
     public LayerMask walkablelayer;
+    public LayerMask collectibleLayer;
     
 
     void Awake()
@@ -29,6 +30,12 @@ public class PlayerControl : TouchableGameObject
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, walkablelayer))
             {
+                agent.SetDestination(hit.point);
+            }
+
+            if(Physics.Raycast(ray, out hit, Mathf.Infinity, collectibleLayer))
+            {
+                Debug.Log("Collectible:" + hit.collider.name);
                 agent.SetDestination(hit.point);
             }
         }
