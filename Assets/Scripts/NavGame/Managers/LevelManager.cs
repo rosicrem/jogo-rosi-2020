@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NavGame.Core;
 
 namespace NavGame.Managers
 {
@@ -10,7 +11,9 @@ namespace NavGame.Managers
     {
         public static LevelManager instance;
         public Action [] actions;
-        protected int setectedAction = -1;
+        public OnActionSelectEvent onActionSelect;
+        public OnActionCancelEvent onActionCancel;
+        protected int selectedAction = -1;
 
         protected virtual void Awake()
         {
@@ -32,27 +35,41 @@ namespace NavGame.Managers
 
         public virtual void SelectAction(int actionIndex)
         {
-            Debug.Log("Selected:" + actions[actionIndex].prefab.name);
-            setectedAction = actionIndex;
+            CancelAction();
+            selectedAction = actionIndex;
+            if(onActionSelect != null)
+            {
+                onActionSelect(actionIndex);
+            }
         }
 
         public virtual void DoAction(Vector3 point)
         {
-            Debug.Log("Do:" + actions[setectedAction].prefab.name);
-            Instantiate(actions[setectedAction].prefab, point, Quaternion.identity);
+            Instantiate(actions[selectedAction].prefab, point, Quaternion.identity);
+            int index = selectedAction;
+            selectedAction = -1;
+            if(onActionCancel != null)
+            {
+                onActionCancel(index);
+            }
         }
 
         public virtual void CancelAction()
         {
-            if(setectedAction != -1)
+            if(selectedAction != -1)
             {
-                setectedAction = -1;
+                int index = selectedAction;
+                selectedAction = -1;
+                if(onActionCancel != null)
+                {
+                    onActionCancel(index);
+                }
             }
         }
 
         public bool IsActionSelected()
         {
-            return setectedAction != -1;
+            return selectedAction != -1;
         }
 
         protected abstract IEnumerator SpawnBad();
