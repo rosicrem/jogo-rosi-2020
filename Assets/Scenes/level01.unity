@@ -487,8 +487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.134}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029208, y: -0.0000017436}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.1598, y: 0.064597}
+  m_SizeDelta: {x: 104.55, y: 99.885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237564262
 MonoBehaviour:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.06132078, b: 0.38423392, a: 0.43529412}
+  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -945,8 +945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.134}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029208, y: -0.0000017436}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -4.0967, y: 0.00091701}
+  m_SizeDelta: {x: 117.07, y: 100.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677493539
 MonoBehaviour:
@@ -961,7 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.06132078, b: 0.38423392, a: 0.43529412}
+  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1639,8 +1639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.134}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029208, y: -0.0000017436}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.74948, y: -0.00093885}
+  m_SizeDelta: {x: 107.38, y: 100.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091487645
 MonoBehaviour:
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.06132078, b: 0.38423392, a: 0.43529412}
+  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2523,6 +2523,7 @@ GameObject:
   - component: {fileID: 1644335373}
   - component: {fileID: 1644335372}
   - component: {fileID: 1644335374}
+  - component: {fileID: 1644335375}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -2590,6 +2591,22 @@ MonoBehaviour:
   badWaves: 3
   waitTimeFirstWave: 2
   waitTimeBetweenWaves: 4
+--- !u!114 &1644335375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644335371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534c33403b8410945bee7094eb90facb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownObjects:
+  - {fileID: 237564260}
+  - {fileID: 1091487643}
+  - {fileID: 677493537}
 --- !u!1 &1848461475
 GameObject:
   m_ObjectHideFlags: 0
