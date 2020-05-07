@@ -1475,7 +1475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 62.699997, y: -0.0000076293945}
+  m_AnchoredPosition: {x: 62.69995, y: -0.0000076293945}
   m_SizeDelta: {x: 125.5, y: 114.000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049385892
@@ -2584,6 +2584,7 @@ MonoBehaviour:
     prefab: {fileID: 386784191529921317, guid: a636c96294fa535449299270cb894caf, type: 3}
     waitTime: 10
     coolDown: 0
+  errorSound: error
   badSpawn:
   - {fileID: 1226633767}
   badPrefabs: {fileID: 1597291236074240125, guid: 978ea24d93a3a16478bc85967e01d77b,
