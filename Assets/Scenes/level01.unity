@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
+  m_Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -961,7 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
+  m_Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38820854, g: 0.7735849, b: 0.105820596, a: 0.43529412}
+  m_Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2573,12 +2573,12 @@ MonoBehaviour:
   - cost: 5
     prefab: {fileID: 3080806216433857446, guid: 284f121c1ca867a41b1524f4bf86040c,
       type: 3}
-    waitTime: 6
+    waitTime: 5
     coolDown: 0
   - cost: 3
     prefab: {fileID: 2198047319428617217, guid: 733bfc75567ee5e439b1b80894eecae6,
       type: 3}
-    waitTime: 5
+    waitTime: 2
     coolDown: 0
   - cost: 7
     prefab: {fileID: 386784191529921317, guid: a636c96294fa535449299270cb894caf, type: 3}
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   - {fileID: 237564260}
   - {fileID: 1091487643}
   - {fileID: 677493537}
-  actionCost:
+  actionCosts:
   - {fileID: 195660545}
   - {fileID: 891499059}
   - {fileID: 1848461477}
