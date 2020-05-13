@@ -89,6 +89,7 @@ public class PlayerControl : TouchableGameObject
         {
             if(IsInTouch(pickupTarget))
             {
+                LevelManager.instance.AddResource(pickupTarget.amount);
                 pickupTarget.Pickup();
             }
         }

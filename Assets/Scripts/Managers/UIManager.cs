@@ -6,16 +6,23 @@ using NavGame.Managers;
 
 public class UIManager : MonoBehaviour
 {
+    public Text coinText;
     public GameObject[] cooldownObjects;
     public Text[] actionCosts;
     Image[] cooldownImages;
+
+    void Awake()
+    {
+        LevelManager.instance.onActionSelect += OnActionSelect;
+        LevelManager.instance.onActionCancel += OnActionCancel;
+        LevelManager.instance.onActionCooldownUpdateEvent += OnActionCooldownUpdate;
+        LevelManager.instance.onResourceUpdate += OnResourceUpdate;  
+    }
     
     void Start()
     {
         InitializeUI();
-        LevelManager.instance.onActionSelect += OnActionSelect;
-        LevelManager.instance.onActionCancel += OnActionCancel;
-        LevelManager.instance.onActionCooldownUpdateEvent += OnActionCooldownUpdate;
+       
     }
 
     void InitializeUI()
@@ -44,6 +51,11 @@ public class UIManager : MonoBehaviour
     {
         float percent = coolDown / waitTime;
         cooldownImages[actionIndex].fillAmount = percent;
+    }
+
+    void OnResourceUpdate (int curruentAmount)
+    {
+        coinText.text = "x " + curruentAmount;
     }
 
 }
