@@ -17,6 +17,7 @@ namespace NavGame.Core
     public delegate void OnResourceUpdateEvent(int currentAmount);
     public delegate void OnReportableErrorEvent(string message);
     public delegate void OnWaveUpdateEvent( int totalWaves, int currentWave);
+    public delegate void OnWaveCountDownEvent(float remainingTime);
 
 }
 
