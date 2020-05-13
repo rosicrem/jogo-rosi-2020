@@ -22,7 +22,7 @@ namespace NavGame.Models
         {
             if(CoinCount < amount)
             {
-                throw new InvalidOperationException("Need" + amount + "coins!");
+                throw new InvalidOperationException("Need " + amount + " coins!");
             }
         }
     }
