@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 9154245998683816078}
   - component: {fileID: 8325822042348267602}
   m_Layer: 0
-  m_Name: raposita
+  m_Name: Raposita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 9154245998691119866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.257942, y: 1.0071416, z: 11.531211}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 9154245998690824042}
   - {fileID: 9154245998690823964}

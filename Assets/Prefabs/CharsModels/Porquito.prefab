@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 5120286488956489189}
   - component: {fileID: 1614268992572800780}
   m_Layer: 10
-  m_Name: porquito
+  m_Name: Porquito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,7 +1666,7 @@ Transform:
   m_GameObject: {fileID: 5120286488963760007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.839148, y: 1.0071416, z: 9.993867}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5120286488963916289}
   - {fileID: 5120286488963916385}

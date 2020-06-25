@@ -604,6 +604,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683809612}
     m_Modifications:
+    - target: {fileID: 9154245998683816078, guid: 6750df8153c45f047b0f2af9bf0730f2,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 040f91ebabc862f4e9f7f6f16985d075, type: 2}
     - target: {fileID: 9154245998690823962, guid: 6750df8153c45f047b0f2af9bf0730f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1296,6 +1301,7 @@ GameObject:
   - component: {fileID: 683809615}
   - component: {fileID: 683809614}
   - component: {fileID: 683809613}
+  - component: {fileID: 683809616}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1377,6 +1383,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &683809616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683809611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170a61b44e32d8243ae58f195396fc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothness: 0.1
 --- !u!1 &771123188
 GameObject:
   m_ObjectHideFlags: 0
