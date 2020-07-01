@@ -45,8 +45,8 @@ GameObject:
   - component: {fileID: 881234640519207803}
   - component: {fileID: 3568032613782698358}
   - component: {fileID: 2198047319428615165}
-  - component: {fileID: 2198047319428617216}
-  - component: {fileID: 114328240956669942}
+  - component: {fileID: 4954533829721532779}
+  - component: {fileID: 566127549147903755}
   m_Layer: 0
   m_Name: Infantry
   m_TagString: Untagged
@@ -68,6 +68,7 @@ Transform:
   - {fileID: 3070949177258934048}
   - {fileID: 433107085359168052}
   - {fileID: 7503493795735340035}
+  - {fileID: 6741476543051630059}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -173,7 +174,7 @@ MonoBehaviour:
   damageEffects: {fileID: 1697551473633478788, guid: 30103bb6f8ef5314e98c7a5cad2255c8,
     type: 3}
   dieEffects: {fileID: 0}
---- !u!114 &2198047319428617216
+--- !u!114 &4954533829721532779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,21 +183,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2198047319428617217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2260cc9b5bec544092d9a3b7dc7df7a, type: 3}
+  m_Script: {fileID: 11500000, guid: e4cbe477db971b444a8329310fd39081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.5
   ofenseStats:
     damage: 10
-    attackSpeed: 1.2
+    attackSpeed: 1
   attackRange: 4
   attackDelay: 0.5
-  castTransform: {fileID: 0}
+  castTransform2: {fileID: 6741476543051630059}
   enemyLayers:
   - Creep
   enemiesToAttack: []
---- !u!114 &114328240956669942
+  projectilePrefab: {fileID: 7380090241973634434, guid: b58b7cfa34c159c4c9a25a138779c2c3,
+    type: 3}
+--- !u!114 &566127549147903755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,6 +241,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2198047319428617220}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7843881923909099329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6741476543051630059}
+  m_Layer: 0
+  m_Name: CastPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6741476543051630059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843881923909099329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22, y: 1.68, z: 0.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2198047319428617220}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1055634497289838404
 PrefabInstance:
