@@ -14,7 +14,7 @@ namespace NavGame.Core
         public OfenseStats ofenseStats;
         public float attackRange = 4f;
         public float attackDelay = 0.5f;
-        public Transform castTransform2;
+        public Transform castTransform;
         public string[] enemyLayers;
         public bool isInCombat {get; private set;}
 
@@ -39,9 +39,9 @@ namespace NavGame.Core
             agent = GetComponent <NavMeshAgent>();
             enemyMask = LayerMask.GetMask(enemyLayers);
 
-            if(castTransform2 == null)
+            if(castTransform == null)
             {
-                castTransform2 = transform;
+                castTransform = transform;
             }
         }
         
@@ -86,9 +86,9 @@ namespace NavGame.Core
             yield return new WaitForSeconds(delay);
             if(target != null)
             {
-                if(onAttackStart != null)
+                if(onAttackCast != null)
                 {
-                    onAttackCast(castTransform2.position);
+                    onAttackCast(castTransform.position);
                 }
                 Attack(target);
                
