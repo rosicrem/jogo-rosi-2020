@@ -20,8 +20,12 @@ namespace NavGame.Managers
         public OnReportableErrorEvent onReportableError;
         public OnWaveUpdateEvent onWaveUpdate;
         public OnWaveCountDownEvent onWaveCountdown;
+        public OnDefeatEvent onDefeat;
+        public bool isPaused { get; private set; } = false;
         protected int selectedAction = -1;
         protected LevelData levelData = new LevelData();
+
+        DamageableGameObject nexus;
 
 
         protected virtual void Awake()
@@ -35,6 +39,14 @@ namespace NavGame.Managers
                 Destroy(gameObject);
             }
 
+            GameObject obj = GameObject.FindWithTag("Finish");
+            nexus = obj.GetComponent<DamageableGameObject>();
+
+        }
+
+        void OnEnable()
+        {
+            nexus.onDied += EmitDefeatEvent;
         }
 
         protected virtual void Start()
@@ -139,6 +151,26 @@ namespace NavGame.Managers
                 onActionCooldownUpdateEvent(actionIndex, action.coolDown, action.waitTime);
             }
 
+        }
+
+        void EmitDefeatEvent()
+        {
+            if(onDefeat != null)
+            {
+                onDefeat();
+            }
+        }
+
+        public void Pause()
+        {
+            isPaused = true;
+            Time.timeScale = 0f;
+        }
+
+        public void Resume()
+        {
+            isPaused = false;
+            Time.timeScale = 1f;
         }
 
         protected abstract IEnumerator SpawnBad();
