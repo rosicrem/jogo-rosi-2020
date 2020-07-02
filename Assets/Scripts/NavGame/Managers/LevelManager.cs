@@ -21,6 +21,7 @@ namespace NavGame.Managers
         public OnWaveUpdateEvent onWaveUpdate;
         public OnWaveCountDownEvent onWaveCountdown;
         public OnDefeatEvent onDefeat;
+        public OnVictoryEvent onVictory;
         public bool isPaused { get; private set; } = false;
         protected int selectedAction = -1;
         protected LevelData levelData = new LevelData();
@@ -51,6 +52,7 @@ namespace NavGame.Managers
 
         protected virtual void Start()
         {
+            AddResource(12);
             StartCoroutine(SpawnBad());
         }
 
@@ -158,6 +160,14 @@ namespace NavGame.Managers
             if(onDefeat != null)
             {
                 onDefeat();
+            }
+        }
+
+        protected void EmitVictoryEvent()
+        {
+            if(onVictory != null)
+            {
+                onVictory();
             }
         }
 
