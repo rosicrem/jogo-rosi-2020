@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 318eace9bd574ab4b9b67668c6e88cc9
+guid: e699eaa6d70339d42bef346c4101ae7a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,7 +9,7 @@ ModelImporter:
     2100002: bush01
     2300000: //RootNode
     3300000: //RootNode
-    4300000: tree01
+    4300000: tree02
   externalObjects: {}
   materials:
     importMaterials: 1

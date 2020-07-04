@@ -1,15 +1,28 @@
 fileFormatVersion: 2
-guid: 318eace9bd574ab4b9b67668c6e88cc9
+guid: 70d361c7cd9d3fc4989345d510128b4c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder.003
+    100004: Plane
+    100006: WireFance
     400000: //RootNode
-    2100000: tree01
-    2100002: bush01
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: tree01
+    400002: Cylinder.003
+    400004: Plane
+    400006: WireFance
+    2100000: WireFance
+    2100002: No Name
+    2100004: WallFance
+    2300000: Cylinder.003
+    2300002: Plane
+    2300004: WireFance
+    3300000: Cylinder.003
+    3300002: Plane
+    3300004: WireFance
+    4300000: WireFance
+    4300002: Plane
+    4300004: Cylinder.003
   externalObjects: {}
   materials:
     importMaterials: 1

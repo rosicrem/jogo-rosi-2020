@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: 318eace9bd574ab4b9b67668c6e88cc9
+guid: 4e801d79de3c34843abea679aec52e05
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Fountain
+    100004: Plane
     400000: //RootNode
-    2100000: tree01
-    2100002: bush01
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: tree01
+    400002: Fountain
+    400004: Plane
+    2100000: Fountain
+    2100002: No Name
+    2300000: Fountain
+    2300002: Plane
+    3300000: Fountain
+    3300002: Plane
+    4300000: Fountain
+    4300002: Plane
   externalObjects: {}
   materials:
     importMaterials: 1
